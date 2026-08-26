@@ -1,15 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+
+<!--     <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+ -->    
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="BiblioGames - Biblioteca de gestión de juegos de PC" name="description" >
+    <meta content="Rubén Terré" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="/styles/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="/styles/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="/styles/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" >
+    <link href="/styles/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="/styles/colors/green-tech.css" rel="stylesheet" type="text/css" >
+
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>BiblioGames</title>
 	</head>
-	<body>
+	<body class="dark-scheme">
 		<slot />
+
+
+	<!-- Javascript Files
+    ================================================== -->
+    <script is:inline src="/scripts/plugins.js"></script>
+    <script is:inline src="/scripts/designesia.js"></script>
+    <script is:inline src="/scripts/jquery.countdown.js"></script>
+    <script is:inline src="/scripts/countdown-custom.js"></script>
+    <script is:inline src="/scripts/custom-marquee.js"></script>
+    <script is:inline src="/scripts/custom-swiper-2.js"></script>
+
 	</body>
 </html>
 

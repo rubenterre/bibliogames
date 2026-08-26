@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+  --primary-color: #28e98c;
+  --primary-color-rgb: 40, 233, 140;
+  --secondary-color: #1b9c5e;
+  --secondary-color-rgb: 27, 156, 94;
+  --tertiary-color: #1b9c5e;
+  --tertiary-color-rgb: rgba(27, 156, 94, 1);
+  --bg-dark-1: #000002;
+  --bg-dark-1-rgb: 0 ,0 ,2;
+  --bg-dark-2: #060608;
+  --bg-dark-3: #383339;
+  --dark-body-font-color: #9a99b1;
+  --gradient-text: 45deg,#ffffff 0%, #aaaaaa 100%;
+  --title-font: "Sora", Helvetica, Arial, sans-serif;
+  --body-font: "Sora", Helvetica, Arial, sans-serif;
+  --body-font-weight: 400;
+
+}

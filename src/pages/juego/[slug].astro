@@ -1,0 +1,353 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import games from "../../data/games.json";
+
+export function getStaticPaths() {
+  return games.map((game) => ({
+    params: { slug: game.slug },
+    props: { game },
+  }));
+}
+
+const { game } = Astro.props;
+---
+
+<Layout>
+  <div id="wrapper">
+    <div class="float-text show-on-scroll">
+      <span><a href="#">Scroll to top</a></span>
+    </div>
+    <div class="scrollbar-v show-on-scroll"></div>
+    <div id="de-loader"></div>
+
+    <!-- header begin -->
+    <Header />
+    <!-- header close -->
+
+    <!-- content begin -->
+    <div class="no-bottom no-top" id="content">
+      <div id="top"></div>
+
+      <!-- ficha de detalle del juego -->
+      <section class="game-detail-hero jarallax" aria-label="section">
+        <div class="de-gradient-edge-bottom"></div>
+        <img
+          src={`/${game.background}`}
+          class="jarallax-img"
+          alt={`Fondo de ${game.title}`}
+        />
+
+        <div class="container z-1000">
+          <div class="row g-4">
+            <!-- carátula + acciones -->
+            <div class="col-lg-3 col-md-4">
+              <div class="game-cover-wrap">
+                <img
+                  src={`/${game.cover}`}
+                  class="img-fluid rounded game-cover"
+                  alt={`Carátula de ${game.title}`}
+                />
+              </div>
+            </div>
+
+            <!-- título, rating, acciones -->
+            <div
+              class="col-lg-9 col-md-8 d-flex flex-column justify-content-end"
+            >
+              <div class="d-flex align-items-center flex-wrap gap-3 mb-2">
+                <h2 class="text-white mb-0 wow fadeInUp" data-wow-delay=".1s">
+                  {game.title}
+                </h2>
+                <span class="game-rating">
+                  <i class="fa fa-star"></i>
+                  {game.rating}
+                </span>
+              </div>
+              <p class="game-year mb-3">
+                {game.year}
+                <span class="value px-2"><strong>{game.publisher}</strong></span
+                >
+              </p>
+
+              <span class="value tag-group">
+                {game.genres?.map((g) => <span class="tag-badge">{g}</span>)}
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="no-top">
+        <div class="container">
+          <div class="row g-5">
+            <!-- resumen -->
+            <div class="col-lg-8">
+              <h4 class="mb20">Resumen</h4>
+              <p class="text-white-op7">{game.summary}</p>
+              <div class="game-details-row">
+                <span class="label">Temáticas</span>
+                <span class="value tag-group">
+                  {game.themes?.map((t) => <span class="tag-badge">{t}</span>)}
+                </span>
+              </div>
+
+              <div class="game-details-row pt-2">
+                <span class="label">Características</span>
+                <span class="value tag-group">
+                  {
+                    game.features?.map((f) => (
+                      <span class="tag-badge">{f}</span>
+                    ))
+                  }
+                </span>
+              </div>
+            </div>
+
+            <!-- detalles técnicos -->
+            <div class="col-lg-4">
+              <h4 class="mb20">Detalles</h4>
+              <div class="game-details-list">
+                <div class="game-details-row">
+                  <span class="label">Desarrollado por</span>
+                  <span class="value">{game.developer}</span>
+                </div>
+                <div class="game-details-row">
+                  <span class="label">Publicado por</span>
+                  <span class="value">{game.publisher}</span>
+                </div>
+                <div class="game-details-row">
+                  <span class="label">Plataforma</span>
+                  <span class="value">{game.platform}</span>
+                </div>
+                <div class="game-details-row">
+                  <span class="label">Formato</span>
+                  <span class="value">{game.format}</span>
+                </div>
+                <!--                 <div class="game-details-row">
+                  <span class="label">Géneros</span>
+                  <span class="value tag-group">
+                    {
+                      game.genres?.map((g) => (
+                        <span class="tag-badge">{g}</span>
+                      ))
+                    }
+                  </span>
+                </div> -->
+                <!--                 <div class="game-details-row">
+                  <span class="label">Temáticas</span>
+                  <span class="value tag-group">
+                    {
+                      game.themes?.map((t) => (
+                        <span class="tag-badge">{t}</span>
+                      ))
+                    }
+                  </span>
+                </div> -->
+                <!--                 <div class="game-details-row">
+                  <span class="label">Características</span>
+                  <span class="value tag-group">
+                    {
+                      game.features?.map((f) => (
+                        <span class="tag-badge">{f}</span>
+                      ))
+                    }
+                  </span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- galería de medios -->
+          {
+            game.media && game.media.length > 0 && (
+              <div class="row mt-5">
+                <div class="col-lg-12">
+                  <h4 class="mb20">Media</h4>
+                  <div class="row g-3">
+                    {game.media.map((src) => (
+                      <div class="col-lg-4 col-md-6">
+                        <img
+                          src={`/${src}`}
+                          class="img-fluid rounded game-media-thumb"
+                          alt={`Captura de ${game.title}`}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )
+          }
+        
+        {
+          game.dlc && game.dlc.length > 0 && (
+            <div class="row mt-5">
+              <div class="col-lg-12">
+                <h4 class="mb20">DLC y expansiones</h4>
+                <div class="row g-3">
+                  {game.dlc.map((item) => (
+                    <div class="col-lg-3 col-md-6">
+                      <div class="dlc-card">
+                        <img
+                          src={`/${item.cover}`}
+                          class="img-fluid rounded"
+                          alt={`Carátula de ${item.title}`}
+                        />
+                        <div class="dlc-info">
+                          <h6 class="mb-0">{item.title}</h6>
+                          <small class="text-white-op7">
+                            {item.year} · {item.downloadSize}
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )
+        }
+        </div>
+      </section>
+    </div>
+    <!-- content close -->
+
+    <!-- footer begin -->
+    <footer>
+      <div class="container">
+        <div class="subfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">Copyright 2026 - BiblioGames</div>
+              <div class="col-lg-6 col-sm-6 text-lg-end text-sm-start">
+                <ul class="menu-simple">
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer close -->
+  </div>
+</Layout>
+
+<style>
+  .game-detail-hero {
+    position: relative;
+    padding: 80px 0 40px;
+    min-height: 380px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .game-cover-wrap {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .game-cover {
+    display: block;
+    width: 100%;
+  }
+
+  .game-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .game-rating i {
+    color: var(--primary-color);
+  }
+
+  .game-year {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+  }
+
+  .btn-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transition: background 0.2s ease;
+  }
+
+  .btn-icon:hover {
+    background: var(--primary-color);
+  }
+
+  .btn-icon-danger:hover {
+    background: #e3324a;
+  }
+
+  .btn-download {
+    margin-left: 10px;
+    line-height: 1.2;
+  }
+
+  .btn-download small {
+    font-size: 11px;
+    opacity: 0.8;
+  }
+
+  .game-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .game-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 10px;
+  }
+
+  .game-details-row .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .game-details-row .value {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  .tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag-badge {
+    background: rgba(var(--primary-color-rgb), 0.15);
+    color: var(--primary-color);
+    border: 1px solid rgba(var(--primary-color-rgb), 0.4);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 12px;
+  }
+
+  .game-media-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+</style>

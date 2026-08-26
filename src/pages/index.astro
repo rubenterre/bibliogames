@@ -1,11 +1,123 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import games from "../data/games.json";
 ---
 
 <Layout>
-	<Welcome />
+  <div id="wrapper">
+    <div class="float-text show-on-scroll">
+      <span><a href="#">Scroll to top</a></span>
+    </div>
+    <div class="scrollbar-v show-on-scroll"></div>
+    <!-- page preloader begin -->
+    <div id="de-loader"></div>
+    <!-- page preloader close -->
+
+    <!-- header begin -->
+    <Header/>
+    <!-- header close -->
+    <!-- content begin -->
+    <div class="no-bottom no-top" id="content">
+      <div id="top"></div>
+
+      <section id="section-hero" aria-label="section" class="jarallax">
+        <div class="de-gradient-edge-bottom"></div>
+        <img src="/images/background/fondo_principal.webp" class="jarallax-img" alt="fondo con imagen del universo" />
+        <div class="container z-1000">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="spacer-double d-lg-none d-sm-block"></div>
+              <h2 class="text-white wow fadeInUp" data-wow-delay=".1s">
+                BiblioGames
+              </h2>
+              <h5 class="mb-3 wow fadeInUp" data-wow-delay=".3s">
+                Gestión de juegos físicos con fichas personalizadas
+              </h5>
+              <p class="lead mb-0 wow fadeInUp" data-wow-delay=".5s">
+                Diseño mis propios estuches para los juegos y añado en ellos un
+                enlace a esta plataforma, donde puedo consultar los datos
+                técnicos de cada título sin depender de servicios externos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="no-top">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+              <h3 class="wow fadeInUp mb20" data-wow-delay="0s">
+                Todos los juegos
+              </h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-6 form-dark wow fadeIn">
+              <input
+                type="text"
+                name="search"
+                id="search_games"
+                class="form-control border-white-op3-1 rounded-30px bg-dark-2 text-white fs-18 p-2 px-3"
+                placeholder="Buscar juegos"
+                required
+              />
+            </div>
+
+            <div id="games_list" class="row g-4 wow fadeIn">
+              {
+                games.map((game) => (
+                  <div
+                    class="col-lg-3 col-md-6 item popular survival"
+                    data-id={game.id}
+                  >
+                    <div class="de-item">
+                      <div class="d-overlay">
+                        <div class="d-label">{game.label}</div>
+                        <div class="d-text">
+                          <h4>{game.title}</h4>
+                          <p class="d-price">
+                            Licencia <span class="price">{game.license}</span>
+                          </p>
+                          <a class="btn-main btn-fullwidth" href={`/juego/${game.slug}`}>
+                            <span>Más información</span>
+                          </a>
+                        </div>
+                      </div>
+                      <img
+                        src={game.cover}
+                        class="img-fluid"
+                        alt={`carátula de ${game.title}`}
+                      />
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- content close -->
+
+    <!-- ` begin -->
+    <footer>
+      <div class="container">
+        <div class="subfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">Copyright 2026 - BiblioGames</div>
+              <div class="col-lg-6 col-sm-6 text-lg-end text-sm-start">
+                <ul class="menu-simple">
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer close -->
+    </footer>
+  </div>
 </Layout>

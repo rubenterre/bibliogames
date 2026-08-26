@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "slug": "anno-1404",
+    "title": "Anno 1404",
+    "label": "Estrategia",
+    "license": "GOG",
+    "cover": "images/covers/ANNO1404.webp",
+    "background": "images/background/ANNO1404_fondo.webp",
+    "year": 2009,
+    "rating": 4.2,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Related Designs",
+    "publisher": "Ubisoft",
+    "genres": ["Estrategia", "Gestión"],
+    "themes": ["Medieval", "Construcción de ciudades"],
+    "features": ["Un jugador", "Modo campaña"],
+    "downloadSize": "4.2 GiB",
+    "summary": "Anno 1404 es un juego de estrategia y gestión ambientado en la Edad Media, donde el jugador construye y administra ciudades comerciales entre Occidente y Oriente. Combina economía, diplomacia y desarrollo urbano con una estética detallada y una banda sonora aclamada. Las decisiones sobre comercio y expansión territorial condicionan el crecimiento de cada asentamiento.",
+    "media": [
+      "images/covers-landscape/1.webp",
+      "images/covers-landscape/2.webp",
+      "images/covers-landscape/3.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "age-of-empires-iv",
+    "title": "Age of Empires IV",
+    "label": "RTS",
+    "license": "Steam",
+    "cover": "images/covers/AGEOFEMPIRESIV.webp",
+    "background": "images/background/AGEOFEMPIRESIV_fondo.webp",
+    "year": 2021,
+    "rating": 4.5,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "World's Edge & Relic Entertainment",
+    "publisher": "Xbox Game Studios",
+    "genres": ["Estrategia en tiempo real", "Histórico"],
+    "themes": ["Edad Media", "Civilizaciones"],
+    "features": ["Un jugador", "Multijugador", "Campañas históricas"],
+    "downloadSize": "50 GiB",
+    "summary": "Age of Empires IV recupera la fórmula clásica de la saga con enfrentamientos estratégicos en tiempo real, gestión de recursos y batallas a gran escala entre civilizaciones históricas. Su propuesta combina campañas documentales, asedios espectaculares y facciones con estilos de juego diferenciados. Es una entrega moderna que mantiene el espíritu tradicional de la serie y refuerza su dimensión competitiva y narrativa.",
+    "media": [
+      "images/covers-landscape/4.webp",
+      "images/covers-landscape/5.webp",
+      "images/covers-landscape/6.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "command-and-conquer-remastered-collection",
+    "title": "Command & Conquer Remastered Collection",
+    "label": "Remaster",
+    "license": "Steam",
+    "cover": "images/covers/COMMANDANDCONQUER_REMASTEREDCOLLECTION.webp",
+    "background": "images/background/COMMANDANDCONQUER_REMASTEREDCOLLECTION_fondo.webp",
+    "year": 2020,
+    "rating": 4.6,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Petroglyph Games & Lemon Sky Studios",
+    "publisher": "Electronic Arts",
+    "genres": ["Estrategia en tiempo real", "Remaster"],
+    "themes": ["Ciencia ficción", "Guerra"],
+    "features": ["Un jugador", "Multijugador", "Editor de mapas"],
+    "downloadSize": "32 GiB",
+    "summary": "Command & Conquer Remastered Collection reúne las remasterizaciones de Tiberian Dawn y Red Alert con soporte 4K, interfaz modernizada y multijugador reconstruido. La colección incluye las tres expansiones, editor de mapas, galería de material inédito y más de siete horas de música remasterizada. Mantiene la base clásica del RTS original y añade mejoras modernas de calidad de vida.",
+    "media": [
+      "images/covers-landscape/1.webp",
+      "images/covers-landscape/7.webp",
+      "images/covers-landscape/8.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "company-of-heroes-2",
+    "title": "Company of Heroes 2",
+    "label": "RTS",
+    "license": "Steam",
+    "cover": "images/covers/COH_2.webp",
+    "background": "images/background/COH_2_fondo.webp",
+    "year": 2013,
+    "rating": 4.3,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Relic Entertainment",
+    "publisher": "Sega",
+    "genres": ["Estrategia en tiempo real", "Táctica"],
+    "themes": ["Segunda Guerra Mundial", "Frente oriental"],
+    "features": ["Un jugador", "Multijugador", "Expansiones"],
+    "downloadSize": "35 GiB",
+    "summary": "Company of Heroes 2 es un RTS ambientado en la Segunda Guerra Mundial que pone el foco en el combate táctico, el control del terreno y la gestión eficiente de unidades. Su base jugable se amplía con campañas, ejércitos independientes y expansiones que refuerzan tanto el contenido para un jugador como el multijugador. Es una de las entregas más representativas del RTS bélico moderno en PC.",
+    "media": [
+      "images/covers-landscape/2.webp",
+      "images/covers-landscape/3.webp",
+      "images/covers-landscape/4.webp"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "train-valley-2",
+    "title": "Train Valley 2",
+    "label": "Indie",
+    "license": "GOG",
+    "cover": "images/covers/TRAINVALLEY_2.webp",
+    "background": "images/background/TRAINVALLEY_2_fondo.webp",
+    "year": 2019,
+    "rating": 4.1,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Flazm",
+    "publisher": "META Publishing",
+    "genres": ["Puzle", "Gestión", "Simulación"],
+    "themes": ["Ferrocarriles", "Industrial"],
+    "features": ["Un jugador", "Gestión de tráfico", "Progresión por niveles"],
+    "downloadSize": "2.5 GiB",
+    "summary": "Train Valley 2 es un juego de puzle y gestión ferroviaria en el que debes construir redes de trenes, coordinar el tráfico y mejorar locomotoras para mantener la producción en marcha. Su campaña lleva a la compañía desde la Revolución Industrial hasta escenarios más modernos, con mapas cada vez más complejos. La experiencia se centra en el juego en solitario y en la optimización eficiente de rutas.",
+    "media": [
+      "images/covers-landscape/5.webp",
+      "images/covers-landscape/6.webp",
+      "images/covers-landscape/8.webp"
+    ],
+    "dlc": [
+  {
+    "title": "Train Valley 2: Passengers Flow",
+    "year": 2024,
+    "cover": "images/covers-landscape/7.webp",
+    "downloadSize": "8.4 GiB"
+  }
+]
+
+  }
+]
