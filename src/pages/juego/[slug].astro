@@ -12,6 +12,7 @@ export function getStaticPaths() {
 }
 
 const { game } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -34,7 +35,7 @@ const { game } = Astro.props;
       <section class="game-detail-hero jarallax" aria-label="section">
         <div class="de-gradient-edge-bottom"></div>
         <img
-          src={`./${game.background}`}
+          src={`${base}${game.background}`}
           class="jarallax-img"
           alt={`Fondo de ${game.title}`}
         />
@@ -45,7 +46,7 @@ const { game } = Astro.props;
             <div class="col-lg-3 col-md-4">
               <div class="game-cover-wrap">
                 <img
-                  src={`./${game.cover}`}
+                  src={`${base}${game.cover}`}
                   class="img-fluid rounded game-cover"
                   alt={`Carátula de ${game.title}`}
                 />
@@ -139,7 +140,7 @@ const { game } = Astro.props;
                     {game.media.map((src) => (
                       <div class="col-lg-4 col-md-6">
                         <img
-                          src={`/${src}`}
+                          src={`${base}${src}`}
                           class="img-fluid rounded game-media-thumb"
                           alt={`Captura de ${game.title}`}
                         />
@@ -162,7 +163,7 @@ const { game } = Astro.props;
                     <div class="col-lg-3 col-md-6">
                       <div class="dlc-card">
                         <img
-                          src={`/${item.cover}`}
+                          src={`${base}${item.cover}`}
                           class="img-fluid redondeado"
                           alt={`Carátula de ${item.title}`}
                         />

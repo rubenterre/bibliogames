@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import games from "../data/games.json";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -24,7 +26,7 @@ import games from "../data/games.json";
 
       <section id="section-hero" aria-label="section" class="jarallax">
         <div class="de-gradient-edge-bottom"></div>
-        <img src="./images/background/fondo_principal.webp" class="jarallax-img" alt="fondo con imagen del universo" />
+        <img src={`${base}images/background/fondo_principal.webp`} class="jarallax-img" alt="fondo con imagen del universo" />
         <div class="container z-1000">
           <div class="row g-4 justify-content-center">
             <div class="col-lg-8 text-center">
@@ -80,13 +82,13 @@ import games from "../data/games.json";
                           <p class="d-price">
                             Licencia <span class="price">{game.license}</span>
                           </p>
-                          <a class="btn-main btn-fullwidth" href={`/juego/${game.slug}`}>
+                          <a class="btn-main btn-fullwidth" href={`${base}juego/${game.slug}/`}>
                             <span>Más información</span>
                           </a>
                         </div>
                       </div>
                       <img
-                        src={game.cover}
+                        src={`${base}${game.cover}`}
                         class="img-fluid"
                         alt={`carátula de ${game.title}`}
                       />

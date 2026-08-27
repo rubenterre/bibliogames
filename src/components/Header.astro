@@ -1,3 +1,7 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
 <header class="transparent">
       <div class="container">
         <div class="row">
@@ -7,11 +11,11 @@
                 <div class="de-flex-col">
                   <!-- logo begin -->
                   <div id="logo">
-                    <a href="/">
-                      <img class="logo-main" src="./images/logo.png" alt="Logo de BiblioGames" />
+                    <a href={base}>
+                      <img class="logo-main" src={`${base}images/logo.png`} alt="Logo de BiblioGames" />
                       <img
                         class="logo-mobile"
-                        src="./images/logo-mobile.png"
+                        src={`${base}images/logo-mobile.png`}
                         alt="Logo de BiblioGames"
                       />
                     </a>
@@ -21,12 +25,12 @@
               </div>
               <div class="de-flex-col header-col-mid">
                <ul id="mainmenu">
-                  <li><a class="menu-item" href="/">Inicio</a></li>
+                  <li><a class="menu-item" href={base}>Inicio</a></li>
                 </ul> 
               </div>
               <div class="de-flex-col">
                 <div class="menu_side_area">
-                  <a href="https://rubenterre.me" class="btn-main btn-line"
+                  <a href="https://rubenterre.me" class="btn-main btn-line" target="_blank" rel="noopener noreferrer"
                     ><span>Visita mi perfíl</span></a
                   >
                   <span id="menu-btn"></span>
