@@ -1,0 +1,32 @@
+{
+  "name": "BiblioGames",
+  "short_name": "BiblioGames",
+  "description": "Biblioteca digital para la gestión y consulta de un catálogo de videojuegos físicos de PC y Xbox.",
+  "start_url": "/bibliogames/",
+  "scope": "/bibliogames/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b0b0b",
+  "theme_color": "#0b0b0b",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/bibliogames/images/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/bibliogames/images/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/bibliogames/images/pwa/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

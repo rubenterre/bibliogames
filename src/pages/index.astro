@@ -3,12 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import games from "../data/games.json";
+import Seo from "../components/Seo.astro";
 
 const base = import.meta.env.BASE_URL;
 ---
 
-<Layout>
-  <div id="wrapper">
+<Layout title="BiblioGames | Biblioteca digital de videojuegos físicos">
+  <Seo
+    title="BiblioGames | Biblioteca digital de videojuegos físicos"
+    description="Biblioteca digital para la gestión y consulta de un catálogo de videojuegos físicos de PC y Xbox."
+    pathname="/bibliogames/"
+    image="images/background/fondo_principal.webp"
+    type="website"
+  />  <div id="wrapper">
     <div class="float-text show-on-scroll">
       <span><a href="#">Scroll to top</a></span>
     </div>
