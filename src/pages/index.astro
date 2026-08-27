@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import games from "../data/games.json";
 ---
 
@@ -101,23 +102,6 @@ import games from "../data/games.json";
     <!-- content close -->
 
     <!-- ` begin -->
-    <footer>
-      <div class="container">
-        <div class="subfooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">Copyright 2026 - BiblioGames</div>
-              <div class="col-lg-6 col-sm-6 text-lg-end text-sm-start">
-                <ul class="menu-simple">
-                  <li><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- footer close -->
-    </footer>
+    <Footer/>
   </div>
 </Layout>

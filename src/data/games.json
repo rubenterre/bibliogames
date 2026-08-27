@@ -126,11 +126,136 @@
     "dlc": [
   {
     "title": "Train Valley 2: Passengers Flow",
-    "year": 2024,
-    "cover": "images/covers-landscape/7.webp",
-    "downloadSize": "8.4 GiB"
+    "year": 2019,
+    "cover": "images/covers-landscape/DLC_TRAIN_VALLEY_2_PASSANGERS_FLOW.webp",
+    "downloadSize": "5 MB"
   }
 ]
 
+  },
+  {
+    "id": 6,
+    "slug": "starcraft-2-wings-of-liberty",
+    "title": "StarCraft II: Wings of Liberty",
+    "label": "RTS",
+    "license": "Battle.net",
+    "cover": "images/covers/STARCRAFT2.webp",
+    "background": "images/background/STARCRAFT2_fondo.webp",
+    "year": 2010,
+    "rating": 4.7,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "genres": ["Estrategia en tiempo real", "Ciencia ficción"],
+    "themes": ["Guerra espacial", "Facciones enfrentadas"],
+    "features": ["Un jugador", "Multijugador", "Modo campaña"],
+    "downloadSize": "30 GiB",
+    "summary": "StarCraft II: Wings of Liberty retoma la rivalidad entre Terran, Zerg y Protoss con una campaña centrada en Jim Raynor y su lucha contra el dominio de Arcturus Mengsk. El juego combina una jugabilidad de estrategia en tiempo real muy pulida con un competitivo multijugador que se convirtió en referencia del género y del esport. Su producción técnica y narrativa consolidó a la saga como uno de los RTS más influyentes de PC.",
+    "media": [
+      "images/covers-landscape/1.webp",
+      "images/covers-landscape/4.webp",
+      "images/covers-landscape/7.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "starcraft-2-legacy-of-the-void",
+    "title": "StarCraft II: Legacy of the Void",
+    "label": "Expansión",
+    "license": "Battle.net",
+    "cover": "images/covers/STARCRAFT2_LEGACYOFTHEVOID.webp",
+    "background": "images/background/STARCRAFT2_LEGACYOFTHEVOID_fondo.webp",
+    "year": 2015,
+    "rating": 4.8,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "genres": ["Estrategia en tiempo real", "Ciencia ficción"],
+    "themes": ["Guerra espacial", "Facción Protoss"],
+    "features": ["Un jugador", "Multijugador", "Modo campaña", "Modo cooperativo"],
+    "downloadSize": "30 GiB",
+    "summary": "Legacy of the Void cierra la trilogía de StarCraft II centrando su campaña en Zeratul y el líder protoss Artanis, que unifican su especie para enfrentar la amenaza de los xel'naga corrompidos. La expansión introduce el modo cooperativo por parejas, nuevas unidades y ajustes de equilibrio que refinaron el multijugador competitivo. Supone el cierre narrativo de la saga original y una de las expansiones mejor valoradas del RTS moderno.",
+    "media": [
+      "images/covers-landscape/2.webp",
+      "images/covers-landscape/5.webp",
+      "images/covers-landscape/8.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "anno-2070",
+    "title": "Anno 2070",
+    "label": "Estrategia",
+    "license": "Uplay",
+    "cover": "images/covers/ANNO2070.webp",
+    "background": "images/background/ANNO2070_fondo.webp",
+    "year": 2011,
+    "rating": 4.1,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Related Designs & Ubisoft Blue Byte",
+    "publisher": "Ubisoft",
+    "genres": ["Estrategia", "Gestión"],
+    "themes": ["Ciencia ficción", "Ecología", "Construcción de ciudades"],
+    "features": ["Un jugador", "Multijugador", "Modo campaña"],
+    "downloadSize": "8 GiB",
+    "summary": "Anno 2070 traslada la saga a un futuro cercano marcado por el cambio climático y la subida del nivel del mar, obligando al jugador a colonizar islas y gestionar recursos con tecnologías sostenibles. El título introduce facciones enfrentadas entre ecologistas y tecnócratas, añadiendo una capa de decisiones ideológicas al clásico desarrollo urbano de la serie. Combina la profundidad de gestión habitual de Anno con un escenario especulativo poco frecuente en el género.",
+    "media": [
+      "images/covers-landscape/1.webp",
+      "images/covers-landscape/3.webp",
+      "images/covers-landscape/6.webp"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "anno-1800",
+    "title": "Anno 1800",
+    "label": "Estrategia",
+    "license": "Uplay",
+    "cover": "images/covers/ANNO1800.webp",
+    "background": "images/background/ANNO1800_fondo.webp",
+    "year": 2019,
+    "rating": 4.6,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Ubisoft Blue Byte",
+    "publisher": "Ubisoft",
+    "genres": ["Estrategia", "Gestión"],
+    "themes": ["Revolución Industrial", "Construcción de ciudades", "Colonialismo"],
+    "features": ["Un jugador", "Multijugador", "Modo campaña", "Numerosas expansiones"],
+    "downloadSize": "20 GiB",
+    "summary": "Anno 1800 regresa a un escenario histórico ambientado en la Revolución Industrial del siglo XIX, donde el jugador administra ciudades cada vez más complejas, cadenas de producción y rutas comerciales entre continentes. Su campaña narrativa se combina con un extenso soporte posterior de expansiones que ampliaron mapas, mecánicas y regiones jugables. Es considerado uno de los títulos más completos y mejor valorados de la saga Anno.",
+    "media": [
+      "images/covers-landscape/4.webp",
+      "images/covers-landscape/7.webp",
+      "images/covers-landscape/2.webp"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "anno-117-pax-romana-gold-edition",
+    "title": "Anno 117: Pax Romana - Gold Edition",
+    "label": "Gold Edition",
+    "license": "Uplay",
+    "cover": "images/covers/ANNO117_GOLD.webp",
+    "background": "images/background/ANNO117_GOLD_fondo.webp",
+    "year": 2025,
+    "rating": 4.4,
+    "platform": "PC",
+    "format": "Físico",
+    "developer": "Ubisoft Mainz",
+    "publisher": "Ubisoft",
+    "genres": ["Estrategia", "Gestión"],
+    "themes": ["Roma Antigua", "Construcción de ciudades", "Imperio"],
+    "features": ["Un jugador", "Multijugador", "Modo campaña", "Year 1 Pass incluido"],
+    "downloadSize": "25 GiB",
+    "summary": "Anno 117: Pax Romana traslada la saga a la Roma Antigua, donde el jugador expande su imperio gobernando provincias mediante la economía, la diplomacia o el poder militar. La Gold Edition incluye la aventura base junto al Year 1 Pass, que añade tres expansiones de contenido y cinco extras cosméticos durante el primer año tras el lanzamiento. Supone la primera entrega ambientada en la antigüedad clásica dentro de la serie.",
+    "media": [
+      "images/covers-landscape/5.webp",
+      "images/covers-landscape/8.webp",
+      "images/covers-landscape/1.webp"
+    ]
   }
 ]
