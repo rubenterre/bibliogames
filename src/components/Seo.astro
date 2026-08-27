@@ -32,7 +32,7 @@ const normalizedPathname = pathname
   : base;
 
 const canonical = new URL(normalizedPathname, site).toString();
-const imagePath = image.startsWith("http")
+const imagePath = image.startsWith("https")
   ? image
   : new URL(`${base}${normalizePath(image)}`, site).toString();
 ---
