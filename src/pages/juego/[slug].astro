@@ -34,7 +34,7 @@ const { game } = Astro.props;
       <section class="game-detail-hero jarallax" aria-label="section">
         <div class="de-gradient-edge-bottom"></div>
         <img
-          src={`/${game.background}`}
+          src={`./${game.background}`}
           class="jarallax-img"
           alt={`Fondo de ${game.title}`}
         />
@@ -45,7 +45,7 @@ const { game } = Astro.props;
             <div class="col-lg-3 col-md-4">
               <div class="game-cover-wrap">
                 <img
-                  src={`/${game.cover}`}
+                  src={`./${game.cover}`}
                   class="img-fluid rounded game-cover"
                   alt={`Carátula de ${game.title}`}
                 />
